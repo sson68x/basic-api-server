@@ -44,9 +44,10 @@ describe('Testing clothes route', () => {
         })
 
         test('Delete clothes item', async () => {
-            const response = await mockRequest.delete('/clotehs/1');
+            const response = await mockRequest.delete('/clothes/1');
             expect(response.status).toEqual(200);
             expect(response.body).toEqual({});
         })
+
     });
 });

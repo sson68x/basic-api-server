@@ -1,7 +1,7 @@
 'use strict';
 
 const supertest = require('supertest');
-const { server } = require('../server');
+const { server } = require('../src/server');
 const { sequelize } = require('../src/models/index');
 const mockRequest = supertest(server);
 
